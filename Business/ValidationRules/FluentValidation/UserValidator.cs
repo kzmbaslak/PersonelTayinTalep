@@ -15,7 +15,7 @@ namespace Business.ValidationRules.FluentValidation
         {
             RuleFor(u => u.RegistryName).NotEmpty();
             RuleFor(c => c.RegistryName).Must(name => name != null && name.ToLower().StartsWith("ab"))
-                .WithMessage("Sicil ab başlamalıdır.");
+                .WithMessage("Sicil ab ile başlamalıdır.");
         }
     }
 }

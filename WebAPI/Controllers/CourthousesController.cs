@@ -34,6 +34,8 @@ namespace WebAPI.Controllers
         [HttpGet("getAll")]
         public IActionResult GetAll()
         {
+            Console.WriteLine(User.Identity?.Name);
+
             var result = _courthouseService.GetAll();
 
 

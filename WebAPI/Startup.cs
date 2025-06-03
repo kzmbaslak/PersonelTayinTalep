@@ -30,6 +30,20 @@ namespace WebAPI
             //services.AddSingleton<IUserService, UserManager>();
             //services.AddSingleton<IUserDal, EfUserDal>();
 
+            //React ın aynı ağda çalışması için
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowReactApp",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:3000") // React'ın çalıştığı adres
+                               .AllowAnyHeader()
+                               .AllowAnyMethod();
+                    });
+            });
+
+
+
             //Token'ı TokenOption üzerinden kullanacağı söylenir. 
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
@@ -74,6 +88,9 @@ namespace WebAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("AllowReactApp"); // middleware olarak ekle React.js aynı domain üzerinde çalıştığı için CORS'a gerek yok.
+
 
             app.UseAuthentication();
 

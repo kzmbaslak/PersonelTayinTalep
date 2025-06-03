@@ -10,6 +10,7 @@ using DataAccess.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using WebAPI.Middlewares;
 
 namespace WebAPI
 {
@@ -86,6 +87,10 @@ namespace WebAPI
             }
 
             app.UseHttpsRedirection();
+
+
+            // Global hata yakalama middleware (en yukarıda!)
+            app.UseMiddleware<ErrorHandlingMiddleware>();
 
             app.UseRouting();
 

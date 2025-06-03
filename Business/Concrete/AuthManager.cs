@@ -62,9 +62,10 @@ namespace Business.Concrete
         {
             if (_userService.GetByRegistry(registryName) != null)
             {
-                return new ErrorResult(Messages.UserAlreadyExists);
+                return new SuccessResult();
             }
-            return new SuccessResult();
+            return new ErrorResult(Messages.UserNotFound);
+
         }
 
         public IDataResult<AccessToken> CreateAccessToken(User user)

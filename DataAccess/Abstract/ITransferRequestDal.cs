@@ -15,5 +15,6 @@ namespace DataAccess.Abstract
 
         List<TransferRequestDetailDto> GetAllTransferRequestDetails();
         TransferRequestDetailDto GetTransferRequestDetails(int transferRequestId);
+        List<TransferRequestDetailDto> GetAllTransferRequestDetailsByUserId(int userId);
     }
 }

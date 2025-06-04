@@ -9,7 +9,8 @@ namespace Core.Dataaccess
     
     public interface IEntityRepository<T> where T:class,IEntity,new()
     {
-        List<T> GetAll(Expression<Func<T,bool>> filter=null); 
+        List<T> GetAll(Expression<Func<T,bool>> filter=null,
+                            params Expression<Func<T, object>>[] includes); 
 
         T Get(Expression<Func<T, bool>> filter,
                             params Expression<Func<T, object>>[] includes);

@@ -1,25 +1,22 @@
 ﻿using Business.Abstract;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
-    public class CitiesController : ControllerBase
+    public class TransferTypesController : Controller
     {
-        ICityService _cityService;
-
-        public CitiesController(ICityService cityService)
+        ITransferTypeService _transferTypeService;
+        public TransferTypesController(ITransferTypeService transferTypeService)
         {
-            _cityService = cityService;
+            _transferTypeService = transferTypeService;
         }
-
         [HttpGet("getAll")]
-        public IActionResult GetAll()
+        public IActionResult GaetAll()
         {
-
-            var result = _cityService.GetAll();
+            var result = _transferTypeService.GetAll();
 
 
             if (result.Success)

@@ -14,6 +14,10 @@ namespace Entities.Mapping.Profiles
         public BusinessProfile()
         {
             CreateMap<Courthouse, CourthouseDto>().ReverseMap();
+            CreateMap<Courthouse, CourthouseDetailDto>().ReverseMap();
+
+            CreateMap<TransferRequest, TransferRequestDetailDto>().ReverseMap();
+            CreateMap<TransferRequest, TransferRequestDto>().ReverseMap();
         }
     }
 }

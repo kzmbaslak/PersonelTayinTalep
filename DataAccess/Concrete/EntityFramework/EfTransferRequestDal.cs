@@ -34,6 +34,27 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+        public List<TransferRequestDetailDto> GetAllTransferRequestDetailsByUserId(int userId)
+        {
+            using (PersonnelManagementContext context = new PersonnelManagementContext())
+            {
+                var result = from tr in context.TransferRequests
+                             join c in context.Courthouses on tr.DestinationCourthouseId equals c.Id
+                             join u in context.Users on tr.UsertId equals u.Id
+                             join tt in context.TransferTypes on tr.TransferTypeId equals tt.Id
+                             where u.Id == userId
+                             select new TransferRequestDetailDto
+                             {
+                                 Id = tr.Id,
+                                 DestinationCourthouseName = c.Name,
+                                 TransferTypeName = tt.Name,
+                                 RequestDate = tr.RequestDate,
+                                 User = u
+                             };
+                return result.ToList();
+            }
+        }
+
         public TransferRequestDetailDto GetTransferRequestDetails(int transferRequestId)
         {
             using (PersonnelManagementContext context = new PersonnelManagementContext())

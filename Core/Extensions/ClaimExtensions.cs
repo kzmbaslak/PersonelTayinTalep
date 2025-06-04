@@ -12,11 +12,11 @@ namespace Core.Extensions
     {
         public static void AddRegistry(this ICollection<Claim> claims, string registry)
         {
-            claims.Add(new Claim("registry", registry));
+            claims.Add(new Claim("registryName", registry));
         }
         public static void AddEmail(this ICollection<Claim> claims, string email)
         {
-            claims.Add(new Claim(JwtRegisteredClaimNames.Email, email));
+            claims.Add(new Claim(ClaimTypes.Email, email));
         }
 
         public static void AddName(this ICollection<Claim> claims, string name)

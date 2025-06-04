@@ -34,6 +34,7 @@ namespace Business.Concrete
 
         [CacheRemoveAspect("ICourthouseService.Get")]
         [ValidationAspect(typeof(CourthouseValidator))]
+        [SecuredOperation("admin,courthouse.add")]
         public IResult Add(CourthouseDto courthouseDto)
         {
 
@@ -54,14 +55,15 @@ namespace Business.Concrete
         }
 
         [CacheAspect]
-        [SecuredOperation("admin,courthouse.list")]
         public IDataResult<List<Courthouse>> GetAll()
         {
             return new SuccessDataResult<List<Courthouse>>(_courthouseDal.GetAll(), Messages.CourthouseListed);
         }
-        public IDataResult<Courthouse> GetById(int courthouseId)
+        public IDataResult<CourthouseDetailDto> GetById(int courthouseId)
         {
-            return new SuccessDataResult<Courthouse>(_courthouseDal.Get(c => c.Id == courthouseId, c => c.City), Messages.CourthouseFinded);
+            Courthouse courthouse = _courthouseDal.Get(c => c.Id == courthouseId, c => c.City);
+            
+            return new SuccessDataResult<CourthouseDetailDto>(AutoMapperHelper.Map<CourthouseDetailDto>(courthouse), Messages.CourthouseFinded);
         }
 
 
@@ -88,6 +90,7 @@ namespace Business.Concrete
             }
         }
 
+        [SecuredOperation("admin,courthouse.delete")]
         public IResult Delete(int courthouseId)
         {
             _courthouseDal.Delete(new Courthouse() { Id = courthouseId });

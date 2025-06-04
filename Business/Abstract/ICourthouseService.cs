@@ -13,7 +13,7 @@ namespace Business.Abstract
     {
         IDataResult<List<Courthouse>> GetAll();
 
-        IDataResult<Courthouse> GetById(int courthouseId);
+        IDataResult<CourthouseDetailDto> GetById(int courthouseId);
         IDataResult<List<Courthouse>> GetAllByCityId(int id);
 
         IResult Add(CourthouseDto courthouseDto);

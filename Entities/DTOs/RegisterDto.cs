@@ -2,7 +2,7 @@
 
 namespace Entities.DTOs
 {
-    public class UserForRegisterDto : IDto
+    public class RegisterDto : IDto
     {
         public string RegistryName { get; set; }
         public string Password { get; set; }

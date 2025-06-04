@@ -1,5 +1,6 @@
 ﻿using Core.Entities.Concrete;
 using Entities.Concrete;
+using Entities.DTOs;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
@@ -9,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace Business.ValidationRules.FluentValidation
 {
-    public class UserValidator : AbstractValidator<User>
+    public class RegisterDtoValidator : AbstractValidator<RegisterDto>
     {
-        public UserValidator()
+        public RegisterDtoValidator()
         {
             RuleFor(u => u.RegistryName).NotEmpty();
             RuleFor(u => u.RegistryName).MinimumLength(5);
@@ -19,6 +20,8 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(u => u.FirstName).MinimumLength(3);
             RuleFor(u => u.LastName).NotEmpty();
             RuleFor(u => u.LastName).MinimumLength(3);
+            RuleFor(u => u.Password).NotEmpty();
+            RuleFor(u => u.Password).MinimumLength(8);
             RuleFor(c => c.RegistryName).Must(name => name != null && name.ToLower().StartsWith("ab"))
                 .WithMessage("Sicil ab ile başlamalıdır.");
         }

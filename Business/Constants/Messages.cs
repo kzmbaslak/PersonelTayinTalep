@@ -33,6 +33,9 @@ namespace Business.Constants
         public static readonly string CityUpdated = "Şehir Güncellendi.";
 
 
+        public static readonly string TransferRequesAlredyExist = "Bu tayin talebi zaten mevcut.";
+        public static readonly string TransferRequesNotExist = "Bu tayin talebi mevcut değildir.";
+
 
         public static readonly string AuthorizationDenied = "Yetkiniz Yoktur.";
         public static readonly string UserRegistered = "Kayıt oldu.";

@@ -12,7 +12,9 @@ namespace DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=PersonnelManagement;Trusted_Connection=true");
+            //optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=PersonnelManagement;Trusted_Connection=true");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=PersonnelManagement;Username=postgres;Password=toor");
+
         }
 
         public DbSet<Courthouse> Courthouses { get; set; }

@@ -6,7 +6,7 @@ COPY . .
 WORKDIR /src/WebAPI
 RUN dotnet restore
 RUN dotnet publish -c Release -o /app
-WORKDIR /src/DataAcces
+WORKDIR /src/DataAccess
 ENTRYPOINT [ "dotnet", "ef","database","update" ]
 
 # Runtime aşaması

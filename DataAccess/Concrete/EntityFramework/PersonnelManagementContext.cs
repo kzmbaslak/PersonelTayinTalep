@@ -14,7 +14,7 @@ namespace DataAccess.Concrete.EntityFramework
         {
             //optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=PersonnelManagement;Trusted_Connection=true");
             optionsBuilder.UseNpgsql("Host=postgres;Port=5432;Database=PersonnelManagement;Username=postgres;Password=toor");
-
+            //localhost
         }
 
         public DbSet<Courthouse> Courthouses { get; set; }

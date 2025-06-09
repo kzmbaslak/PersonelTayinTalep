@@ -4,11 +4,13 @@ using Business.Abstract;
 using Entities.Concrete;
 using AutoMapper;
 using Entities.DTOs;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class CourthousesController : ControllerBase
     {
         ICourthouseService _courthouseService;
@@ -28,7 +30,7 @@ namespace WebAPI.Controllers
             {
                 return Ok(result.Data);
             } 
-            return BadRequest(result.Message);
+            return BadRequest(new { message = result.Message });
         }
 
         [HttpGet("getAll")]
@@ -42,7 +44,7 @@ namespace WebAPI.Controllers
             {
                 return Ok(result.Data);
             }
-            return BadRequest(result.Message);
+            return BadRequest(new { result.Message });
         }
 
         [HttpPost("add")]
@@ -55,7 +57,7 @@ namespace WebAPI.Controllers
             {
                 return Ok(result);
             }
-            return BadRequest(result.Message);
+            return BadRequest(new { result.Message });
         }
 
         [HttpDelete("delete")]
@@ -67,7 +69,7 @@ namespace WebAPI.Controllers
             {
                 return Ok(result);
             }
-            return BadRequest(result.Message);
+            return BadRequest(new { result.Message });
         }
     }
 }

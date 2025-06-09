@@ -34,7 +34,7 @@ namespace Business.Concrete
         {
             TransferRequest transferRequestTemp = AutoMapperHelper.Map<TransferRequest>(transferRequestDto);
             transferRequestTemp.UsertId = userId;
-            transferRequestTemp.RequestDate = DateTime.Now;
+            transferRequestTemp.RequestDate = DateTime.UtcNow;
 
             IResult result = BusinessRules.Run(checkIfSameTransferRequestExists(transferRequestTemp));
 

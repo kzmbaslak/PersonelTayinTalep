@@ -3,6 +3,7 @@ using Business.Concrete;
 using Business.Constants;
 using Core.Utilities.Results;
 using Entities.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
@@ -33,7 +34,7 @@ namespace WebAPI.Controllers
             {
                 return Ok(result.Data);
             }
-            return BadRequest(result.Message);
+            return BadRequest(new { message = result.Message });
         }
 
         //[HttpPost("transferRequests")]

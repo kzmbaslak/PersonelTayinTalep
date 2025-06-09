@@ -13,7 +13,7 @@ namespace Core.CrossCuttingConcerns.Logging
     {
         public class FileLogger : ILoggerService
         {
-            private readonly string _logFile = "MyLogs/logs.txt";
+            private readonly string _logFile = "logs/logs.txt";
 
             public void Log(LogDetail logDetail)
             {

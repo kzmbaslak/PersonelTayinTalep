@@ -1,0 +1,45 @@
+{"MethodName":"Login","Parameters":[{"Name":"loginDto","Value":{"RegistryName":"afsd","Password":"fa"},"Type":"LoginDto"}],"Timestamp":"2025-06-10T09:21:23.7644613+03:00","ExceptionMessage":""}
+{"MethodName":"GetByRegistry","Parameters":[{"Name":"registryName","Value":"afsd","Type":"String"}],"Timestamp":"2025-06-10T09:21:23.8838509+03:00","ExceptionMessage":""}
+{"MethodName":"GetByRegistry","Parameters":[{"Name":"registryName","Value":"afsd","Type":"String"}],"Timestamp":"2025-06-10T09:21:30.6337786+03:00","ExceptionMessage":"42P01: relation \"Users\" does not exist\r\n\r\nPOSITION: 127"}
+{"MethodName":"Login","Parameters":[{"Name":"loginDto","Value":{"RegistryName":"afsd","Password":"fa"},"Type":"LoginDto"}],"Timestamp":"2025-06-10T09:21:30.6610597+03:00","ExceptionMessage":"42P01: relation \"Users\" does not exist\r\n\r\nPOSITION: 127"}
+{"MethodName":"Login","Parameters":[{"Name":"loginDto","Value":{"RegistryName":"afsd","Password":"fa"},"Type":"LoginDto"}],"Timestamp":"2025-06-10T09:24:35.087351+03:00","ExceptionMessage":""}
+{"MethodName":"GetByRegistry","Parameters":[{"Name":"registryName","Value":"afsd","Type":"String"}],"Timestamp":"2025-06-10T09:24:35.2585252+03:00","ExceptionMessage":""}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:24:49.9708702+03:00","ExceptionMessage":""}
+{"MethodName":"Login","Parameters":[{"Name":"loginDto","Value":{"RegistryName":"afsd","Password":"fa"},"Type":"LoginDto"}],"Timestamp":"2025-06-10T09:26:22.1831017+03:00","ExceptionMessage":""}
+{"MethodName":"GetByRegistry","Parameters":[{"Name":"registryName","Value":"afsd","Type":"String"}],"Timestamp":"2025-06-10T09:26:22.5784946+03:00","ExceptionMessage":""}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:26:33.5626616+03:00","ExceptionMessage":""}
+{"MethodName":"Login","Parameters":[{"Name":"loginDto","Value":{"RegistryName":"afsd","Password":"fa"},"Type":"LoginDto"}],"Timestamp":"2025-06-10T09:26:55.5024072+03:00","ExceptionMessage":""}
+{"MethodName":"GetByRegistry","Parameters":[{"Name":"registryName","Value":"afsd","Type":"String"}],"Timestamp":"2025-06-10T09:26:55.5029406+03:00","ExceptionMessage":""}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:27:00.8168739+03:00","ExceptionMessage":""}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:27:52.579348+03:00","ExceptionMessage":""}
+{"MethodName":"Login","Parameters":[{"Name":"loginDto","Value":{"RegistryName":"afsd","Password":"fa"},"Type":"LoginDto"}],"Timestamp":"2025-06-10T09:28:01.6106611+03:00","ExceptionMessage":""}
+{"MethodName":"GetByRegistry","Parameters":[{"Name":"registryName","Value":"afsd","Type":"String"}],"Timestamp":"2025-06-10T09:28:01.6167888+03:00","ExceptionMessage":""}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:29:01.7979011+03:00","ExceptionMessage":""}
+{"MethodName":"Login","Parameters":[{"Name":"loginDto","Value":{"RegistryName":"afsd","Password":"fa"},"Type":"LoginDto"}],"Timestamp":"2025-06-10T09:29:10.6761677+03:00","ExceptionMessage":""}
+{"MethodName":"GetByRegistry","Parameters":[{"Name":"registryName","Value":"afsd","Type":"String"}],"Timestamp":"2025-06-10T09:29:10.6807873+03:00","ExceptionMessage":""}
+{"MethodName":"Login","Parameters":[{"Name":"loginDto","Value":{"RegistryName":"afsd","Password":"fa"},"Type":"LoginDto"}],"Timestamp":"2025-06-10T09:30:31.9501723+03:00","ExceptionMessage":""}
+{"MethodName":"GetByRegistry","Parameters":[{"Name":"registryName","Value":"afsd","Type":"String"}],"Timestamp":"2025-06-10T09:30:31.9521386+03:00","ExceptionMessage":""}
+{"MethodName":"GetByRegistry","Parameters":[{"Name":"registryName","Value":"afsd","Type":"String"}],"Timestamp":"2025-06-10T09:30:32.0699463+03:00","ExceptionMessage":"An exception has been raised that is likely due to a transient failure."}
+{"MethodName":"Login","Parameters":[{"Name":"loginDto","Value":{"RegistryName":"afsd","Password":"fa"},"Type":"LoginDto"}],"Timestamp":"2025-06-10T09:30:32.091897+03:00","ExceptionMessage":"An exception has been raised that is likely due to a transient failure."}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:31:09.3386255+03:00","ExceptionMessage":""}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:31:10.7766159+03:00","ExceptionMessage":"42P01: relation \"Cities\" does not exist\r\n\r\nPOSITION: 31"}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:31:34.5513134+03:00","ExceptionMessage":""}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:31:35.5800124+03:00","ExceptionMessage":"42P01: relation \"Cities\" does not exist\r\n\r\nPOSITION: 31"}
+{"MethodName":"Login","Parameters":[{"Name":"loginDto","Value":{"RegistryName":"afsd","Password":"fa"},"Type":"LoginDto"}],"Timestamp":"2025-06-10T09:31:45.1890789+03:00","ExceptionMessage":""}
+{"MethodName":"GetByRegistry","Parameters":[{"Name":"registryName","Value":"afsd","Type":"String"}],"Timestamp":"2025-06-10T09:31:45.1930312+03:00","ExceptionMessage":""}
+{"MethodName":"GetByRegistry","Parameters":[{"Name":"registryName","Value":"afsd","Type":"String"}],"Timestamp":"2025-06-10T09:31:45.3570812+03:00","ExceptionMessage":"42P01: relation \"Users\" does not exist\r\n\r\nPOSITION: 127"}
+{"MethodName":"Login","Parameters":[{"Name":"loginDto","Value":{"RegistryName":"afsd","Password":"fa"},"Type":"LoginDto"}],"Timestamp":"2025-06-10T09:31:45.3738187+03:00","ExceptionMessage":"42P01: relation \"Users\" does not exist\r\n\r\nPOSITION: 127"}
+{"MethodName":"Login","Parameters":[{"Name":"loginDto","Value":{"RegistryName":"afsd","Password":"fa"},"Type":"LoginDto"}],"Timestamp":"2025-06-10T09:32:08.9315237+03:00","ExceptionMessage":""}
+{"MethodName":"GetByRegistry","Parameters":[{"Name":"registryName","Value":"afsd","Type":"String"}],"Timestamp":"2025-06-10T09:32:08.932396+03:00","ExceptionMessage":""}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:32:16.959973+03:00","ExceptionMessage":""}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:33:13.9569305+03:00","ExceptionMessage":""}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:33:15.3476134+03:00","ExceptionMessage":"42P01: relation \"Cities\" does not exist\r\n\r\nPOSITION: 31"}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:33:48.6355619+03:00","ExceptionMessage":""}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:33:48.7347224+03:00","ExceptionMessage":"42P01: relation \"Cities\" does not exist\r\n\r\nPOSITION: 31"}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:34:52.4827445+03:00","ExceptionMessage":""}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:34:53.6468269+03:00","ExceptionMessage":"42P01: relation \"Cities\" does not exist\r\n\r\nPOSITION: 31"}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:35:19.5894489+03:00","ExceptionMessage":""}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:35:20.6123708+03:00","ExceptionMessage":"42P01: relation \"Cities\" does not exist\r\n\r\nPOSITION: 31"}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:35:48.4929253+03:00","ExceptionMessage":""}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:35:49.6105417+03:00","ExceptionMessage":"42P01: relation \"Cities\" does not exist\r\n\r\nPOSITION: 31"}
+{"MethodName":"GetAll","Parameters":[],"Timestamp":"2025-06-10T09:36:02.9585211+03:00","ExceptionMessage":""}

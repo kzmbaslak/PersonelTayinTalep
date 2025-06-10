@@ -77,30 +77,40 @@ Aşağıdaki adımları takip ederek uygulamayı Docker üzerinden hızlıca ça
 - Docker ve Docker Compose yüklü olmalıdır.  
   - [Docker Kurulumu (Windows/macOS/Linux)](https://docs.docker.com/get-docker/)
 
-### 2. `.env` Dosyası Oluşturun (Gerekirse)
+### 2. `.env` Dosyası Oluşturun (İsteğe bağlı)
 
 Eğer yapılandırmalar için bir `.env` dosyası gerekiyorsa, aşağıdaki örneği kullanabilirsiniz:
 
 ```env
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=toor
-POSTGRES_DB=personel_db
+POSTGRES_DB=PersonnelManagement
 REACT_APP_API_URL=http://localhost:5000/api
 
 
 
 
+## 🚀 Kurulum Adımları
+
+Aşağıdaki adımları izleyerek projeyi kolayca Docker üzerinde çalıştırabilirsiniz:
+
+### 1. Proje Dosyalarını İndirin
+
+Proje dosyalarını aşağıdaki Google Drive bağlantısından indirin:
+
+🔗 [Google Drive Üzerinden İndir](https://drive.google.com/drive/folders/1_3XLWKYAygNh156wtHSOIrW0iWGHUcQP?usp=drive_link)
+
+### 2. Docker Compose Dosyasının Olduğu Dizine Gidin
+
+Terminal veya Komut İstemcisi (CMD) üzerinde `docker-compose.yml` dosyasının bulunduğu klasöre gidin:
+
+```bash
+cd <proje_dizini>
+docker-compose up -d --build
+cd ./PersonelTayinTalep/DataAccess
+dotnet ef database update
 
 
-
-*************************************************************************************************************
-Docker Compose ile Uygulamayı Başlatın
-Ana dizinde terminali açarak şu komutu çalıştırın:
-
-bash
-Kopyala
-Düzenle
-docker-compose up --build
 Bu işlem tamamlandığında aşağıdaki servisler aktif olur:
 
 React: http://localhost:3000

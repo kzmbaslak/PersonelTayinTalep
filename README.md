@@ -86,11 +86,12 @@ POSTGRES_USER=postgres
 POSTGRES_PASSWORD=toor
 POSTGRES_DB=PersonnelManagement
 REACT_APP_API_URL=http://localhost:5000/api
+```
 
 
 
 
-## 🚀 Kurulum Adımları
+### 3. 🚀 Kurulum Adımları
 
 Aşağıdaki adımları izleyerek projeyi kolayca Docker üzerinde çalıştırabilirsiniz:
 
@@ -109,15 +110,16 @@ cd <proje_dizini>
 docker-compose up -d --build
 cd ./PersonelTayinTalep/DataAccess
 dotnet ef database update
+```
 
 
 Bu işlem tamamlandığında aşağıdaki servisler aktif olur:
 
-React: http://localhost:3000
+React: (http://localhost:3000)
 
-WebAPI (.NET Core): http://localhost:5000
+WebAPI (.NET Core): (http://localhost:5000)
 
-pgAdmin: http://localhost:5050
+pgAdmin: (http://localhost:5050)
 pgAdmin giriş bilgileri admin@admin.com / admin olabilir (docker-compose’a bağlı).
 
 

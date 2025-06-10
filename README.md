@@ -120,7 +120,7 @@ React: (http://localhost:3000)
 WebAPI (.NET Core): (http://localhost:5000)
 
 pgAdmin: (http://localhost:5050)
-pgAdmin giriş bilgileri admin@admin.com / admin olabilir (docker-compose’a bağlı).
+pgAdmin giriş bilgileri admin@admin.com.
 
 
  İlk Kayıt ve Giriş

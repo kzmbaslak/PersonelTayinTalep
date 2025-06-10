@@ -14,7 +14,7 @@ namespace DataAccess.Concrete.EntityFramework
         {
             //optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=PersonnelManagement;Trusted_Connection=true");
             optionsBuilder.UseNpgsql("Host=postgres;Port=5432;Database=PersonnelManagement;Username=postgres;Password=toor");
-            //localhost
+            //postgres
         }
 
         public DbSet<Courthouse> Courthouses { get; set; }
@@ -44,7 +44,7 @@ namespace DataAccess.Concrete.EntityFramework
                 .HasMaxLength(100)
                 .IsRequired();
 
-            //initDataValues(modelBuilder);
+            initDataValues(modelBuilder);
         }
 
         private void initDataValues(ModelBuilder modelBuilder)
